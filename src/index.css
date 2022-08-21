@@ -142,6 +142,9 @@ h6 {
 @media screen and (max-width: 599px) {
   .btn-refresh {
     margin-top: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
   }
 }
 

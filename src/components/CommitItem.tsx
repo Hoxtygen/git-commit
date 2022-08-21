@@ -11,7 +11,7 @@ export default function CommitItem({
   return (
     <div className = "commit-item">
       <h4>{message}</h4>
-      <p>{formatDate(date)} by {author} </p>
+      <p className="time-stamp">{formatDate(date)} by {author} </p>
     </div>
   );
 }
