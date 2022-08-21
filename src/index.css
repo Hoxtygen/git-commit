@@ -6,11 +6,14 @@
   box-sizing: border-box;
 }
 
+
 body {
+  background-color: #f7f7f7;
+  font-family: 'Merriweather', sans-serif;
+  line-height: 1.7;
   margin: 0;
-  font-family: "Merriweather",  sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -19,9 +22,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.main {
+  margin-top: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+  min-height: calc(100vh - 250px);
+}
+
+.commit-list {
+  padding: 1rem;
+  max-width: 700px;
+  margin: auto;
 }
 
 .header {
@@ -43,11 +60,6 @@ h6 {
   justify-content: center;
 }
 
-.btn {
-  width: 120px;
-  padding: 0.5rem 1rem;
-}
-
 .input {
   width: 95%;
   border: none;
@@ -62,6 +74,10 @@ h6 {
 
 .input:focus {
   border: 1px solid #222;
+}
+
+.dynamic-text {
+  text-align: center;
 }
 
 .refresh-btn {
@@ -79,13 +95,54 @@ h6 {
   background-color: #222;
 }
 
+.error {
+  color: red;
+}
+
+.commit-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.commit-item + .commit-item {
+  margin-top: 20px;
+}
+
+.commit-item .time-stamp  {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 120px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+}
+
+.btn:hover  {
+  background-color: #222;
+  color: #fff;
+}
+
+.refresh-countdown {
+  margin: 0;
+}
+
+
+
 .btn-fetch-commits  {
   width: 120px;
   height: 50px;
 }
 
-.error {
-  color: red;
+@media screen and (max-width: 599px) {
+  .btn-refresh {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 599px) {
