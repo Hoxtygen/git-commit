@@ -1,9 +1,9 @@
 import { Octokit } from '@octokit/core';
 import { useState } from 'react';
-import { REPO_NAME, REPO_OWNER } from './../constants/index';
+import { REPO_NAME, REPO_OWNER } from '../constants/index';
 
 
-export function useFetch() {
+export function useFetchCommits() {
 	const [commits, setCommits] = useState<any>([]);
 	const [error, setError] = useState<any>(null)
 	const [loading, setLoading] = useState(false);
